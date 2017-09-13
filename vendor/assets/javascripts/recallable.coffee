@@ -39,7 +39,7 @@ class Recallable
       expire: @now() + expire_min * 60 * 1000,
       value: str
     }
-    # console.log(str)
+    console.log(str) # TODO: デバッグ用
     localStorage.setItem(@_getRecallKey(clazz), JSON.stringify(data))
 
   _getRecallKey: (clazz)->
@@ -64,3 +64,8 @@ class Recallable
      parseInt(m[1])
 
 this.Recallable = Recallable
+
+$ ->
+  if $(".recallable").length > 0
+    rec = new Recallable
+    rec.bindEvents()

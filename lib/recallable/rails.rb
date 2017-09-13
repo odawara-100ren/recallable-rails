@@ -2,6 +2,9 @@ require "recallable/rails/version"
 
 module Recallable
   module Rails
-    # Your code goes here...
+    if defined?(::Rails)
+      class Rails::Engine < ::Rails::Engine
+      end
+    end
   end
 end

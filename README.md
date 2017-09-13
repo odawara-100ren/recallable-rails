@@ -1,6 +1,6 @@
 # Recallable::Rails
 
-
+Retrieve the content in text-area form when you have accidentally left the page without submitting it.
 
 <!-- Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/recallable/rails`. To experiment with that code, run `bin/console` for an interactive prompt.
 
@@ -29,6 +29,15 @@ Add this line to your application.js manifest:
 ## Usage
 
 <!-- TODO: Write usage instructions here -->
+
+Just add "recallable" class to the textarea/input[type="text"] tags you'd like to let remember the content.  This gem supports multiple forms in a page.
+
+```html
+<!-- This form is not recallable -->
+<textarea name="user[name]" id="user_name"></textarea>
+<!-- This form is recallable since it has recallable class. -->
+<textarea class="recallable" name="user[name]" id="user_name"></textarea>
+```
 
 ## Development
 

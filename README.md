@@ -1,28 +1,34 @@
 # Recallable::Rails
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/recallable/rails`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+
+<!-- Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/recallable/rails`. To experiment with that code, run `bin/console` for an interactive prompt.
+
+TODO: Delete this and the text above, and describe your gem-->
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'recallable-rails'
+gem 'recallable-rails', github: "odawara-100ren/recallable-rails"
 ```
 
 And then execute:
 
-    $ bundle
+```
+$ bundle
+```
 
-Or install it yourself as:
+Add this line to your application.js manifest:
 
-    $ gem install recallable-rails
+```js
+//= require recallable
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+<!-- TODO: Write usage instructions here -->
 
 ## Development
 
